@@ -1,0 +1,25 @@
+### Dentist signup
+POST http://localhost:1247/register/dentist HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "valid-email",
+    "contact": "valid-indian-number",
+    "username" : "......",
+    "password" : "......"   // should be alphanumeric(should contain capitals, small letters, numbers, specail chars
+}
+
+### Dentist login
+POST http://localhost:1247/login/dentist HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "........",
+    "password" : "........"
+}
+
+### Test
+GET http://localhost:1247/dentist HTTP/1.1
+
+### Logout
+DELETE http://localhost:1247/dentist/logout HTTP/1.1
